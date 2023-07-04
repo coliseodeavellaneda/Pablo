@@ -86,7 +86,8 @@
 					</div>
 				</div>
 				<div class="image-wrapper wow fadeIn">
-					<div class="image" style="background-image:url({{env('APP_URL')}}/img/home/laactitudestodo.jpeg)"></div>
+					<div class="image" style="background-image:url({{env('APP_URL')}}/img/home/laactitudestodo.jpeg)">
+					</div>
 					<img src="{{env('APP_URL')}}/assets/blank-square.gif" alt="" class="w-100">
 				</div>
 			</div>
@@ -99,7 +100,8 @@
 					</div>
 				</div>
 				<div class="image-wrapper wow fadeIn">
-					<div class="image" style="background-image:url({{env('APP_URL')}}/img/home/maloycorrecto.jpeg)"></div>
+					<div class="image" style="background-image:url({{env('APP_URL')}}/img/home/maloycorrecto.jpeg)">
+					</div>
 					<img src="{{env('APP_URL')}}/assets/blank-square.gif" alt="" class="w-100">
 				</div>
 			</div>
@@ -238,15 +240,11 @@
 
 		</div>
 	</div>
-
-
 </section>
-
-
 
 <section class="map" id="map">
 	<iframe
-		src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d22121.200126671698!2d-58.510387138803644!3d-34.49436328367602!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb10bf26e29dd%3A0x1b1d76a395a4ef1d!2sPirovano%20654%2C%20B1640%20Mart%C3%ADnez%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1672254823882!5m2!1ses-419!2sar"
+		src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3297.0093156931857!2d-59.101875425038536!3d-34.27381464014902!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bb77b9123f9073%3A0xc4217b58e48de9a2!2sCaba%C3%B1a%20Los%20Alamos%20-%20Capilla%20del%20Se%C3%B1or!5e0!3m2!1ses!2sar!4v1688502311440!5m2!1ses!2sar"
 		width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
 		referrerpolicy="no-referrer-when-downgrade"></iframe>
 </section>
