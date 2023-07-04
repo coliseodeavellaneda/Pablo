@@ -48,7 +48,7 @@
 		<div class="row">
 
 			<div class="col-lg-6 position-relative wow fadeIn">
-				<div class="image parallax" style="background-image:url({{env('APP_URL')}}/img/home/el-club.jpg)">
+				<div class="image parallax" style="background-image:url({{env('APP_URL')}}/img/home/soccerclub2.jpeg)">
 				</div>
 			</div>
 
@@ -86,7 +86,7 @@
 					</div>
 				</div>
 				<div class="image-wrapper wow fadeIn">
-					<div class="image" style="background-image:url({{env('APP_URL')}}/img/home/img-1.jpg)"></div>
+					<div class="image" style="background-image:url({{env('APP_URL')}}/img/home/laactitudestodo.jpeg)"></div>
 					<img src="{{env('APP_URL')}}/assets/blank-square.gif" alt="" class="w-100">
 				</div>
 			</div>
@@ -99,7 +99,7 @@
 					</div>
 				</div>
 				<div class="image-wrapper wow fadeIn">
-					<div class="image" style="background-image:url({{env('APP_URL')}}/img/home/img-2.jpg)"></div>
+					<div class="image" style="background-image:url({{env('APP_URL')}}/img/home/maloycorrecto.jpeg)"></div>
 					<img src="{{env('APP_URL')}}/assets/blank-square.gif" alt="" class="w-100">
 				</div>
 			</div>
@@ -112,7 +112,7 @@
 					</div>
 				</div>
 				<div class="image-wrapper wow fadeIn">
-					<div class="image" style="background-image:url({{env('APP_URL')}}/img/home/img-3.jpg)"></div>
+					<div class="image" style="background-image:url({{env('APP_URL')}}/img/home/masdolor.jpeg)"></div>
 					<img src="{{env('APP_URL')}}/assets/blank-square.gif" alt="" class="w-100">
 				</div>
 			</div>
@@ -125,7 +125,7 @@
 					</div>
 				</div>
 				<div class="image-wrapper wow fadeIn">
-					<div class="image" style="background-image:url({{env('APP_URL')}}/img/home/img-4.jpg)"></div>
+					<div class="image" style="background-image:url({{env('APP_URL')}}/img/home/socrates.jpeg)"></div>
 					<img src="{{env('APP_URL')}}/assets/blank-square.gif" alt="" class="w-100">
 				</div>
 			</div>
@@ -175,7 +175,7 @@
 			<div class="col-lg-6 image-wrapper p-0">
 
 				<div class="image parallax wow fadeIn"
-					style="background-image:url({{env('APP_URL')}}/img/home/membership.jpg)"></div>
+					style="background-image:url({{env('APP_URL')}}/img/home/el-club.jpg)"></div>
 
 			</div>
 
