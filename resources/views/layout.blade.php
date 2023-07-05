@@ -12,6 +12,7 @@
     <meta name="keywords" content={{$datos['content2']}}>
 
     <title>{{$datos['title']}}</title>
+    <link rel="stylesheet" href="{{env('APP_URL')}}/css/datepicker.css">
     <link rel="stylesheet" href="{{env('APP_URL')}}/css/lib/bootstrap.min.css">
     <link rel="stylesheet" href="{{env('APP_URL')}}/css/lib/jquery-ui.min.css">
     {{--
@@ -183,6 +184,11 @@
     <script type="text/javascript" src="{{env('APP_URL')}}/js/site/home.js?id=3942"></script>
     <a id="scrollUp" href="#top" style="position: fixed; z-index: 2147483647; display: none"><i
             class="fa fa-angle-up"></i></a>
+    <script type="text/javascript" src="{{env('APP_URL')}}/js/datepicker.js">
+    </script>
+    <script type="text/javascript">
+        $('#date-picker-example').datepicker();
+    </script>
 </body>
 
 </html>

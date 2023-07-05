@@ -140,7 +140,20 @@
 
 
 <section class="gral-section">
-	<img src="{{env('APP_URL')}}/img/home/products.jpg" alt="" class="w-100 wow fadeInDown">
+
+	<div class="md-form md-outline input-with-post-icon datepicker" id="date-picker-example" aria-haspopup="true" style="width: 20%"
+		aria-expanded="false" aria-readonly="false" aria-owns="date-picker-example_root">
+		<input placeholder="Select date" type="text" id="example" class="form-control picker__input">
+		<label for="example" class="active">Try me...</label>
+		<i class="fas fa-calendar input-prefix active" tabindex="0"></i>
+	</div>
+
+	<label for="appt">Elige un horario disponible:</label>
+
+	<input type="time" id="appt" name="appt" min="09:00" max="18:00" required>
+
+	<small>Atencion de: 18 a 22</small>
+
 </section>
 
 
