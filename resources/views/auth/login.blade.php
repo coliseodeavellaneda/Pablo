@@ -28,12 +28,18 @@
 
     <div class="container">
         <div class="box mt-5">
-            <form data-form="login">
+            <form method="POST" action="{{ route('login') }}">
+                @csrf
                 <div class="row">
                     <div class="col-lg-6">
                         <div class="form-floating mb-2">
                             <input name="email" type="email" class="form-control" placeholder="Email" required="" />
                             <label for="">Email *</label>
+                            @error('email')
+                            <span class="invalid-feedback" role="alert">
+                                <strong>{{ $message }}</strong>
+                            </span>
+                            @enderror
                         </div>
                     </div>
 
@@ -42,12 +48,17 @@
                             <input name="password" type="password" class="form-control" placeholder="Contraseña"
                                 required="" />
                             <label for="">Contraseña *</label>
+                            @error('password')
+                            <span class="invalid-feedback" role="alert">
+                                <strong>{{ $message }}</strong>
+                            </span>
+                            @enderror
                         </div>
                     </div>
                 </div>
 
                 <div class="form-group mt-4">
-                    <button class="btn btn-custom btn-gradient btn-rounded btn-lg">
+                    <button type="submit" class="btn btn-custom btn-gradient btn-rounded btn-lg">
                         Ingresar
                     </button>
                 </div>
