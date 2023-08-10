@@ -80,24 +80,28 @@
                 </a>
                 <nav>
                     <ul class="menu">
-                        <li>
+                        {{-- <li>
                             <a data-toggle="menu-link" href="">{{$datos['title']}}</a>
-                        </li>
-                        <li>
+                        </li> --}}
+                        <li class="nav-item">
                             <a data-toggle="menu-link" href="#nosotros">{{$datos['nosotros']}}</a>
                         </li>
-                        <li>
+                        {{-- <li>
                             <a data-toggle="menu-link" href="#membership">{{$datos['membership']}}</a>
-                        </li>
-                        <li>
-                            <a data-toggle="menu-link" href="#contacto">{{$datos['contacto']}}</a>
+                        </li> --}}
+
+                        <li class="nav-item">
+                            <a data-toggle="menu-link" href="/reservar">{{$datos['reservar cancha']}}</a>
                         </li>
 
+                        <li class="nav-item">
+                            <a data-toggle="menu-link" href="#contacto">{{$datos['contacto']}}</a>
+                            <li class="nav-item">
                         <li class="profile">
                             <a href="{{env('APP_URL')}}/login" class="icon">
-                                <img src="{{env('APP_URL')}}/assets/favicon.svg" alt="">
+                                <img src="{{env('APP_URL')}}/assets/soccer.png" alt="">
                             </a>
-                            <a href="{{env('APP_URL')}}/login">{{$datos['Ingresar']}}</a>
+                            {{-- <a href="{{env('APP_URL')}}/login">{{$datos['Ingresar']}}</a> --}}
                         </li>
 
                         <li class="close"><i class="fal fa-times"></i></li>
@@ -113,7 +117,7 @@
     @yield('content')
 
 
-    <footer class="footer">
+    <footer class="footer" style="height: 400px">
         <div class="container text-center">
             <div class="row align-items-center justify-content-center">
                 <div class="col-lg-6">
@@ -187,7 +191,13 @@
     <script type="text/javascript" src="{{env('APP_URL')}}/js/datepicker.js">
     </script>
     <script type="text/javascript">
-        $('#date-picker-example').datepicker();
+        $('#date-picker-example').datepicker({
+            min: Date.now(),
+            value: Date.now(),
+            onClose: function(context) {
+                fecha(context)
+            }
+        });
     </script>
 </body>
 

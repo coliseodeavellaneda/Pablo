@@ -60,6 +60,7 @@ class Controller extends BaseController
                 'twitterDescription' => 'twitterDescription',
                 'numTel' => '91144407442',
                 'instagramURL' => 'dir instagram ...',
+                'reservar cancha' => 'reservar cancha',
             ];
 
 }

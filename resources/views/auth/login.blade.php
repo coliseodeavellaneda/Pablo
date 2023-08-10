@@ -68,7 +68,7 @@
                 <div class="small">
                     <a href="{{ route('password.request') }}">¿Olvidaste la contraseña?</a>
                     | <span>¿Aún no tenés cuenta?</span>
-                    <a href="{{env('APP_URL')}}/#membership">Click aquí para solicitar el alta</a>
+                    <a href="{{ route('register') }}">Registrate</a>
                 </div>
             </form>
         </div>
