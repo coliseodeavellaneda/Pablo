@@ -1,0 +1,52 @@
+version: '3.7'
+
+services:
+  php:
+    build:
+      context: ./.docker
+      dockerfile: Dockerfile
+    ports:
+      - "2000:80"
+    volumes:
+      - ./:/var/www/html
+      - ./logs/php_errors:/var/log/php_errors
+      - ./logs/apache2:/var/log/apache2
+      - ./.docker/php.ini:/usr/local/etc/php/php.ini
+    links:
+      - db
+    networks:
+      - my_network
+
+  db:
+    image: mysql
+    command: --default-authentication-plugin=mysql_native_password
+    volumes:
+      - ./.mysql:/var/lib/mysql
+      - ./db:/docker-entrypoint-initdb.d
+    environment:
+      MYSQL_ROOT_PASSWORD: ${DB_PASSWORD}
+      MYSQL_DATABASE: ${DB_DATABASE}
+      MYSQL_USER: ${DB_USERNAME}
+      MYSQL_PASSWORD: ${DB_PASSWORD}
+    networks:
+      - my_network
+
+  phpmyadmin:
+    image: phpmyadmin/phpmyadmin
+    links: 
+      - db:db
+    ports:
+      - "8000:80"
+    environment:
+      # PMA_HOST: db
+      # PMA_USER: ${DB_USERNAME}
+      # PMA_PASSWORD: ${DB_USERNAME}
+      MYSQL_USER: ${DB_USERNAME}
+      MYSQL_PASSWORD: ${DB_PASSWORD}
+      MYSQL_ROOT_PASSWORD: ${DB_PASSWORD}
+    networks:
+      - my_network
+
+networks:
+  my_network:
+    driver: bridge

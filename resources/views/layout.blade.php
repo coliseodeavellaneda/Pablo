@@ -98,7 +98,7 @@
                         <li class="nav-item">
 
                         <li class="nav-item">
-                            <a data-toggle="menu-link" href="/reservar">{{$datos['reservar cancha']}}</a>
+                            <a href="/reservar">{{$datos['reservar cancha']}}</a>
                         </li>
 
                         <li class="profile">
@@ -193,18 +193,7 @@
     <script type="text/javascript" src="{{env('APP_URL')}}/js/site/home.js?id=3942"></script>
     <a id="scrollUp" href="#top" style="position: fixed; z-index: 2147483647; display: none"><i
             class="fa fa-angle-up"></i></a>
-    <script type="text/javascript" src="{{env('APP_URL')}}/js/datepicker.js">
-    </script>
-    <script type="text/javascript">
-        console.log(Date.now());
-        $('#date-picker-example').datepicker({
-            min: Date.now(),
-            value: Date.now(),
-            onClose: function(context) {
-                fecha(context)
-            }
-        });
-    </script>
+    
 </body>
 
 </html>
