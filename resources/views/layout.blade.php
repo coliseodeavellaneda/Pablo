@@ -80,25 +80,29 @@
                 </a>
                 <nav>
                     <ul class="menu">
+                        
                         {{-- <li>
                             <a data-toggle="menu-link" href="">{{$datos['title']}}</a>
                         </li> --}}
+                        
                         <li class="nav-item">
                             <a data-toggle="menu-link" href="#nosotros">{{$datos['nosotros']}}</a>
                         </li>
+
                         {{-- <li>
                             <a data-toggle="menu-link" href="#membership">{{$datos['membership']}}</a>
                         </li> --}}
 
                         <li class="nav-item">
+                            <a data-toggle="menu-link" href="#contacto">{{$datos['contacto']}}</a>
+                        <li class="nav-item">
+
+                        <li class="nav-item">
                             <a data-toggle="menu-link" href="/reservar">{{$datos['reservar cancha']}}</a>
                         </li>
 
-                        <li class="nav-item">
-                            <a data-toggle="menu-link" href="#contacto">{{$datos['contacto']}}</a>
-                            <li class="nav-item">
                         <li class="profile">
-                            <a href="{{env('APP_URL')}}/login" class="icon">
+                            <a href="{{env('APP_URL')}}" class="icon">
                                 <img src="{{env('APP_URL')}}/assets/soccer.png" alt="">
                             </a>
                             {{-- <a href="{{env('APP_URL')}}/login">{{$datos['Ingresar']}}</a> --}}
@@ -122,7 +126,8 @@
             <div class="row align-items-center justify-content-center">
                 <div class="col-lg-6">
                     <div class="logo">
-                        <img src="{{env('APP_URL')}}/assets/logo-white.svg" alt="">
+                        <h3>SoccerClub</h3>
+                        <img src="{{env('APP_URL')}}/assets/soccer.png" alt="">
                     </div>
                 </div>
 
@@ -191,6 +196,7 @@
     <script type="text/javascript" src="{{env('APP_URL')}}/js/datepicker.js">
     </script>
     <script type="text/javascript">
+        console.log(Date.now());
         $('#date-picker-example').datepicker({
             min: Date.now(),
             value: Date.now(),
@@ -202,3 +208,19 @@
 </body>
 
 </html>
+
+{{-- <script type="text/javascript">
+    $(document).ready(function() {
+        $('#date-picker-example').datepicker({
+            minDate: 0, // Establece la fecha mínima inicial a la fecha actual
+            onSelect: function(dateText, inst) {
+                // Se ejecuta cuando se selecciona una fecha
+                var selectedDate = new Date(dateText);
+                var newMinDate = new Date(selectedDate);
+                newMinDate.setDate(selectedDate.getDate() + 1); // Establece la nueva fecha mínima un día después
+
+                $('#date-picker-example').datepicker('option', 'minDate', newMinDate);
+            }
+        });
+    });
+</script> --}}

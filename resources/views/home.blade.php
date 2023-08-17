@@ -8,7 +8,7 @@
 
 	<div class="slide">
 		<div class="thumb-cover overprint-absolute image parallax"
-			style="background-image:url({{env('APP_URL')}}/img/slides/soccerclub1.jpeg)">
+			style="background-image:url({{env('APP_URL')}}/img/slides/copadelmundo.jpg); background-size: contain; background-repeat: repeat-x;">
 		</div>
 		<div class="overprint-absolute bg"></div>
 
@@ -23,9 +23,9 @@
 
 		<div class="row">
 
-			<div class="col-lg-2 mb-2">
+			<div class="col-lg-3 mb-1">
 				<div class="logo-wrapper wow fadeInLeft">
-					<img src="{{env('APP_URL')}}/assets/favicon-white.svg" alt="" class="logo">
+					<img src="{{env('APP_URL')}}/assets/soccer.png" alt="" class="logo">
 				</div>
 			</div>
 
@@ -46,13 +46,13 @@
 		<div class="row">
 
 			<div class="col-lg-6 position-relative wow fadeIn">
-				<div class="image parallax" style="background-image:url({{env('APP_URL')}}/img/home/soccerclub2.jpeg)">
-				</div>
+				{{-- <div class="image parallax" style="background-image:url({{env('APP_URL')}}/img/home/soccerclub2.jpeg)">
+				</div> --}}
 			</div>
 
 			<div class="col-lg-6">
 
-				<div class="content wow fadeInDown">
+				{{-- <div class="content wow fadeInDown">
 					<h1 class="main-title text-uppercase">{{$datos['nosotros']}}</h1>
 
 					<div class="caption">{{$datos['text2']}}</div>
@@ -60,7 +60,7 @@
 					<div class="caption">{{$datos['text3']}}</div>
 
 					<div class="caption welcome">{{$datos['welcome']}}</div>
-				</div>
+				</div> --}}
 
 			</div>
 		</div>
@@ -83,11 +83,11 @@
 						<div class="caption">{{$datos['text4']}}</div>
 					</div>
 				</div>
-				<div class="image-wrapper wow fadeIn">
+				{{-- <div class="image-wrapper wow fadeIn">
 					<div class="image" style="background-image:url({{env('APP_URL')}}/img/home/laactitudestodo.jpeg)">
 					</div>
 					<img src="{{env('APP_URL')}}/assets/blank-square.gif" alt="" class="w-100">
-				</div>
+				</div> --}}
 			</div>
 
 			<div class="col-lg-3 p-0">
@@ -97,11 +97,11 @@
 						<div class="caption">{{$datos['text5']}}</div>
 					</div>
 				</div>
-				<div class="image-wrapper wow fadeIn">
+				{{-- <div class="image-wrapper wow fadeIn">
 					<div class="image" style="background-image:url({{env('APP_URL')}}/img/home/maloycorrecto.jpeg)">
 					</div>
 					<img src="{{env('APP_URL')}}/assets/blank-square.gif" alt="" class="w-100">
-				</div>
+				</div> --}}
 			</div>
 
 			<div class="col-lg-3 p-0">
@@ -111,10 +111,10 @@
 						<div class="caption">{{$datos['text6']}}</div>
 					</div>
 				</div>
-				<div class="image-wrapper wow fadeIn">
+				{{-- <div class="image-wrapper wow fadeIn">
 					<div class="image" style="background-image:url({{env('APP_URL')}}/img/home/masdolor.jpeg)"></div>
 					<img src="{{env('APP_URL')}}/assets/blank-square.gif" alt="" class="w-100">
-				</div>
+				</div> --}}
 			</div>
 
 			<div class="col-lg-3 p-0">
@@ -124,10 +124,10 @@
 						<div class="caption">{{$datos['text7']}}</div>
 					</div>
 				</div>
-				<div class="image-wrapper wow fadeIn">
+				{{-- <div class="image-wrapper wow fadeIn">
 					<div class="image" style="background-image:url({{env('APP_URL')}}/img/home/socrates.jpeg)"></div>
 					<img src="{{env('APP_URL')}}/assets/blank-square.gif" alt="" class="w-100">
-				</div>
+				</div> --}}
 			</div>
 
 		</div>
@@ -136,7 +136,7 @@
 </section>
 
 
-<section data-section="membership" class="membership">
+{{-- <section data-section="membership" class="membership">
 
 	<div class="container-fluid">
 
@@ -177,7 +177,7 @@
 	</div>
 
 
-</section>
+</section> --}}
 
 
 <section data-section="contacto" class="forms">

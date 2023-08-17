@@ -9,9 +9,9 @@
 <section class="section-header section-header-tiny">
 
     <div class="background" style="
-          background-image: url({{env('APP_URL')}}/img/home/el-club.jpg);
+          background-image: url({{env('APP_URL')}}/img/home/copadelmundo.jpg);
         "></div>
-    <div class="hover"></div>
+    {{-- <div class="hover"></div> --}}
 
     <!-- <div class="container">
 		<div class="position-relative container-small">
